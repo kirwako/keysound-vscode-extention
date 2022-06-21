@@ -10,7 +10,7 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:ara-bra3.helloWorld"
+		"*"
 	],
 	"main": "./extension.js",
 	"contributes": {
@@ -20,39 +20,7 @@
 				"title": "ara"
 			},
 			{
-				"command": "ara-bra3.s0",
-				"title": "s0 alpaca"
-			},
-			{
-				"command": "ara-bra3.s1",
-				"title": "s1 blackink"
-			},
-			{
-				"command": "ara-bra3.s2",
-				"title": "s2 bluealps"
-			},
-			{
-				"command": "arabra3.s3",
-				"title": "s3 boxnavy"
-			},
-			{
-				"command": "arabra3.s4",
-				"title": "s4 buckling"
-			},
-			{
-				"command": "arabra3.s5",
-				"title": "s5 cream"
-			},
-			{
-				"command": "arabra3.s6",
-				"title": "s6 holypanda"
-			},
-			{
-				"command": "arabra3.s7",
-				"title": "s7 mxblack"
-			},
-			{
-				"command": "arabra3.s8",
+				"command": "arabra3.choose",
 				"title": "choice a sound"
 			}
 		]
