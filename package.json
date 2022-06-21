@@ -30,7 +30,7 @@
 		"commands": [
 			{
 				"command": "arabra3.choose",
-				"title": "choice a sound"
+				"title": "Choose key sound effect"
 			}
 		]
 	},

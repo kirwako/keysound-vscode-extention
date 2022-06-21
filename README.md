@@ -24,7 +24,7 @@ ext install key-sound
 1. use this shortcut
  - **macOS** :  <kbd>⇧</kbd> + <kbd>⌘</kbd> + <kbd>P</kbd>
  - **Linux** / **Windows** : <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd>
-2. type `choice a sound` in input field
+2. type `Choose key sound effect` in input field
 3. Finally select your sound effect 🎉
 
 #### This package costs me time to make and maintain every time.

@@ -2,41 +2,52 @@ const vscode = require("vscode");
 const player = require("play-sound")();
 
 const audiosForPress = [
-	"alpaca.mp3",
-	"blackink.mp3",
-	"bluealps.mp3",
-	"boxnavy.mp3",
-	"buckling.mp3",
-	"cream.mp3",
-	"holypanda.mp3",
-	"mxblack.mp3",
+	"alpaca",
+	"blackink",
+	"bluealps",
+	"boxnavy",
+	"buckling",
+	"cream",
+	"holypanda",
+	"mxblack",
+	"mxblue",
+	"mxbrown",
+	"redink",
+	"topre",
+	"turquoise",
 ];
 
 let soundIndex = 0;
 
 function activate(context) {
-	async function getAudio() {
-		// loadedAudio.then(play);
-		const musicpath = `${context.extensionPath}/audios/${audiosForPress[soundIndex]}`;
+	let disposable = vscode.commands.registerCommand("type", (args) => {
+		let musicpath = `${context.extensionPath}/audios/${audiosForPress[soundIndex]}`;
+
+		const default_sound = "GENERIC_R0.mp3";
+		const space_sound = "SPACE.mp3";
+		const enter_sound = "ENTER.mp3";
+
+		if (args.text == " ")
+			musicpath += `/${space_sound}`;
+		else if (args.text == "\n")
+			musicpath += `/${enter_sound}`;
+		// else if (args.text == "\r")
+		// 	musicpath += `/${enter_sound}`;
+		else
+			musicpath += `/${default_sound}`;
+
+		console.log(musicpath)
+
 		player.play(musicpath, function (err) {
 			if (err) throw err;
 			console.log("Audio finished");
 		});
-	}
-
-	let disposable = vscode.commands.registerCommand("type", (args) => {
-		// console.log(context.extensionUri);
-		console.log(context.extensionPath);
-
-		getAudio();
 
 		vscode.commands.executeCommand("default:type", {
 			text: args.text,
 		});
 	});
 
-
-	
 	async function choiceSoundHandler() {
 		let items = [
 			// {
@@ -52,16 +63,26 @@ function activate(context) {
 			{ label: "Buckling Sound", value: 4 },
 			{ label: "Cream Sound", value: 5 },
 			{ label: "Holypanda Sound", value: 6 },
-			{ label: "Mxblack Sound", value: 7 }
+			{ label: "Mxblack Sound", value: 7 },
+			{ label: "Mxblue Sound", value: 8 },
+			{ label: "Mxbrown Sound", value: 9 },
+			{ label: "Redink Sound", value: 10 },
+			{ label: "Topre Sound", value: 11 },
+			{ label: "Turquoise Sound", value: 12 }
 		];
 		const select = vscode.window.showQuickPick(items);
-		select.then(selected => {
+		select.then((selected) => {
 			soundIndex = selected.value;
 			// console.log(selected);
-		})
+		});
 	}
 
-	const choiseSound = vscode.commands.registerCommand("arabra3.choose", () => { choiceSoundHandler(); });
+	const choiseSound = vscode.commands.registerCommand(
+		"arabra3.choose",
+		() => {
+			choiceSoundHandler();
+		}
+	);
 
 	context.subscriptions.push(disposable);
 	context.subscriptions.push(choiseSound);
