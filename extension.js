@@ -1,6 +1,4 @@
 const vscode = require("vscode");
-// const play = require('audio-play');
-// const load = require('audio-loader');
 const player = require("play-sound")();
 
 const audiosForPress = [
