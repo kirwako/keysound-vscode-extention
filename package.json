@@ -1,24 +1,26 @@
 {
-	"name": "ara-bra3",
-	"displayName": "ara bra3",
-	"description": "",
+	"name": "key-sound",
+	"displayName": "Key Sound",
+	"description": "Key Sound is an extention that make mechanical keyboard sound effect when you type in vscode files",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.68.0"
 	},
+	"icon": "icon.png",
 	"categories": [
-		"Other"
+		"Keymaps",
+		"Programming Languages",
+		"Other",
+		"Notebooks",
+		"Testing"
 	],
+	"keywords": ["key sound", "sound effect", "enjoy", "mechanical", "keymaps", "keybind"],
 	"activationEvents": [
 		"*"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
-			{
-				"command": "ara-bra3.helloWorld",
-				"title": "ara"
-			},
 			{
 				"command": "arabra3.choose",
 				"title": "choice a sound"
@@ -46,5 +48,14 @@
 		"audio-play": "^2.3.1",
 		"child_process": "^1.0.2",
 		"play-sound": "^1.1.5"
-	}
+	},
+	"bugs": {
+		"url": "https://github.com/kirwa-KO/keysound-vscode-extention/issues",
+		"email": "imran.baali19@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kirwa-KO/keysound-vscode-extention"
+	},
+	"homepage": "https://github.com/kirwa-KO/keysound-vscode-extention/blob/main/README.md"
 }

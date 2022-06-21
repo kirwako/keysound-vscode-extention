@@ -37,13 +37,6 @@ function activate(context) {
 		});
 	});
 
-	const sayHello = vscode.commands.registerCommand(
-		"ara-bra3.helloWorld",
-		() => {
-			vscode.window.showInformationMessage("Mrhba bik f ara bra3");
-		}
-	);
-
 
 	
 	async function choiceSoundHandler() {
@@ -73,7 +66,6 @@ function activate(context) {
 	const choiseSound = vscode.commands.registerCommand("arabra3.choose", () => { choiceSoundHandler(); });
 
 	context.subscriptions.push(disposable);
-	context.subscriptions.push(sayHello);
 	context.subscriptions.push(choiseSound);
 }
 
