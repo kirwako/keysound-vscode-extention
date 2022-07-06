@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img src="https://github.com/kirwa-KO/keysound-vscode-extention/blob/main/logo.png" alt="key sound Logo">
+  <img src="https://github.com/kirwa-KO/keysound-vscode-extention/blob/main/icon.png" alt="key sound Logo">
 </p>
 
 # key Sound
@@ -26,6 +26,11 @@ ext install key-sound
  - **Linux** / **Windows** : <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd>
 2. type `Choose key sound effect` in input field
 3. Finally select your sound effect 🎉
+
+#### The key sound extention now is live and you can install it now
+https://marketplace.visualstudio.com/items?itemName=kirwako.key-sound&ssr=false#review-details
+
+#### I will be more to hear your feedback
 
 #### This package costs me time to make and maintain every time.
 [I am very 😀 about every coffee!]
