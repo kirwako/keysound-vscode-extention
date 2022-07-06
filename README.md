@@ -30,7 +30,7 @@ ext install key-sound
 #### The key sound extention now is live and you can install it now
 https://marketplace.visualstudio.com/items?itemName=kirwako.key-sound&ssr=false#review-details
 
-#### I will be more to hear your feedback
+`I will be more to hear your feedback`
 
 #### This package costs me time to make and maintain every time.
 [I am very 😀 about every coffee!]
