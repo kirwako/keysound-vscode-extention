@@ -2,7 +2,7 @@
 	"name": "key-sound",
 	"displayName": "Key Sound",
 	"description": "Key Sound is an extention that make mechanical keyboard sound effect when you type in vscode files",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"engines": {
 		"vscode": "^1.68.0"
 	},
