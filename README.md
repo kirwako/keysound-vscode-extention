@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img src="https://github.com/kirwa-KO/keysound-vscode-extention/blob/main/icon.png" alt="key sound Logo">
+  <img src="https://raw.githubusercontent.com/kirwa-KO/keysound-vscode-extention/main/icon.png" alt="key sound Logo">
 </p>
 
 # key Sound
